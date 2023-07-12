@@ -12,9 +12,9 @@
   <body>
     <section>
       <h1 class="title">Understanding A11y in Forms</h1>
-      <p id="description">
+      <h3 id="description">
         Please let us know how we can support you with a11y issues.
-      </p>
+      </h3>
 
       <form for="title">
         <fieldset>
@@ -25,7 +25,13 @@
           <input id="age-Input" type="text" name="age" />
           <label aria-describedby="color-input">Color you cannot see:</label>
           <input id="color-Input" type="color" name="color" />
-          <textarea rows="7" placeholder="Leave us a message..."></textarea>
+
+          <label for="textarea"></label>
+          <textarea
+            rows="7"
+            placeholder="Leave us a message..."
+            id="textarea"
+          ></textarea>
           <button type="submit">Submit</button>
         </fieldset>
       </form>
